@@ -12,8 +12,8 @@ public class Student {
     private String studentFirstName;
     private String studentMiddleName;
     private String studentLastName;
-    private String studentUniversityRollNumber;
-    private String numberOfBooksIssuedByTheStudent;
+    private long studentUniversityRollNumber;
+    private int numberOfBooksIssuedByTheStudent;
     private Book[] allTheNamesOfTheBooksIssuedByTheStudent;
     //getter method
 
@@ -29,16 +29,23 @@ public class Student {
         return studentLastName;
     }
 
-    public String getStudentUniversityRollNumber() {
+    //constructor method
+    //1.non parameterized : It has no parameter
+    private Student() {
+        this.studentFirstName = "Govind";
+        this.studentMiddleName = "";
+        this.studentLastName = "Singh";
+        this.studentUniversityRollNumber = 191500307;
+        this.numberOfBooksIssuedByTheStudent = 2;
+        this.allTheNamesOfTheBooksIssuedByTheStudent = new Book[2];
+    }
+
+    public long getStudentUniversityRollNumber() {
         return studentUniversityRollNumber;
     }
 
-    public String getNumberOfBooksIssuedByTheStudent() {
-        return numberOfBooksIssuedByTheStudent;
-    }
-
-    public Book[] getAllTheNamesOfTheBooksIssuedByTheStudent() {
-        return allTheNamesOfTheBooksIssuedByTheStudent;
+    public void setStudentUniversityRollNumber(long studentUniversityRollNumber) {
+        this.studentUniversityRollNumber = studentUniversityRollNumber;
     }
     //setter method
 
@@ -54,15 +61,19 @@ public class Student {
         this.studentLastName = studentLastName;
     }
 
-    public void setStudentUniversityRollNumber(String studentUniversityRollNumber) {
-        this.studentUniversityRollNumber = studentUniversityRollNumber;
+    public int getNumberOfBooksIssuedByTheStudent() {
+        return numberOfBooksIssuedByTheStudent;
     }
 
-    public void setNumberOfBooksIssuedByTheStudent(String numberOfBooksIssuedByTheStudent) {
+    public void setNumberOfBooksIssuedByTheStudent(int numberOfBooksIssuedByTheStudent) {
         this.numberOfBooksIssuedByTheStudent = numberOfBooksIssuedByTheStudent;
     }
 
     public void setAllTheNamesOfTheBooksIssuedByTheStudent(Book[] allTheNamesOfTheBooksIssuedByTheStudent) {
         this.allTheNamesOfTheBooksIssuedByTheStudent = allTheNamesOfTheBooksIssuedByTheStudent;
+    }
+
+    public Book[] getAllTheNamesOfTheBooksIssuedByTheStudent() {
+        return allTheNamesOfTheBooksIssuedByTheStudent.clone();
     }
 }
