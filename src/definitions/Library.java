@@ -7,6 +7,8 @@
 
 package definitions;
 
+import java.util.Arrays;
+
 public class Library {
     //member variable
     private Book[] allTheBooksThatAreCurrentlyAvailable;
@@ -24,5 +26,11 @@ public class Library {
     //constructor method
     public Library() {
         this.allTheBooksThatAreCurrentlyAvailable = new Book[100];
+    }
+    //to string method
+
+    @Override
+    public String toString() {
+        return Arrays.toString(allTheBooksThatAreCurrentlyAvailable);
     }
 }
