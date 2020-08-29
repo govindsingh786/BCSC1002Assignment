@@ -12,4 +12,18 @@ public class Book {
     private String bookName;
     private String authorName;
     private String bookISBNDigitNumber;
+    // getter method
+
+    public String getBookName() {
+        return bookName;
+    }
+
+    public String getAuthorName() {
+        return authorName;
+    }
+
+    public String getBookISBNDigitNumber() {
+        return bookISBNDigitNumber;
+    }
+
 }
