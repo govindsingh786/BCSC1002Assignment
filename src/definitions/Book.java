@@ -39,4 +39,19 @@ public class Book {
     public void setBookISBNDigitNumber(String bookISBNDigitNumber) {
         this.bookISBNDigitNumber = bookISBNDigitNumber;
     }
+
+    //constructor method
+    //1.non parameterized : It has no parameter
+    public Book() {
+        this.bookName = "House of Leaves";
+        this.authorName = "Mark Z. Daniel";
+        this.bookISBNDigitNumber = "1456EDS789456";
+    }
+
+    //2.parameterized : It would have some parameter
+    public Book(String bookName, String authorName, String bookISBNDigitNumber) {
+        this.bookName = bookName;
+        this.authorName = authorName;
+        this.bookISBNDigitNumber = bookISBNDigitNumber;
+    }
 }
