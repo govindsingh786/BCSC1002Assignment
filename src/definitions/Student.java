@@ -40,4 +40,29 @@ public class Student {
     public Book[] getAllTheNamesOfTheBooksIssuedByTheStudent() {
         return allTheNamesOfTheBooksIssuedByTheStudent;
     }
+    //setter method
+
+    public void setStudentFirstName(String studentFirstName) {
+        this.studentFirstName = studentFirstName;
+    }
+
+    public void setStudentMiddleName(String studentMiddleName) {
+        this.studentMiddleName = studentMiddleName;
+    }
+
+    public void setStudentLastName(String studentLastName) {
+        this.studentLastName = studentLastName;
+    }
+
+    public void setStudentUniversityRollNumber(String studentUniversityRollNumber) {
+        this.studentUniversityRollNumber = studentUniversityRollNumber;
+    }
+
+    public void setNumberOfBooksIssuedByTheStudent(String numberOfBooksIssuedByTheStudent) {
+        this.numberOfBooksIssuedByTheStudent = numberOfBooksIssuedByTheStudent;
+    }
+
+    public void setAllTheNamesOfTheBooksIssuedByTheStudent(Book[] allTheNamesOfTheBooksIssuedByTheStudent) {
+        this.allTheNamesOfTheBooksIssuedByTheStudent = allTheNamesOfTheBooksIssuedByTheStudent;
+    }
 }
