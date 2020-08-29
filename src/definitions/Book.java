@@ -25,5 +25,18 @@ public class Book {
     public String getBookISBNDigitNumber() {
         return bookISBNDigitNumber;
     }
+    // setter method
 
+
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
+    }
+
+    public void setAuthorName(String authorName) {
+        this.authorName = authorName;
+    }
+
+    public void setBookISBNDigitNumber(String bookISBNDigitNumber) {
+        this.bookISBNDigitNumber = bookISBNDigitNumber;
+    }
 }
