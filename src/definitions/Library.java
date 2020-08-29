@@ -13,6 +13,11 @@ public class Library {
     //getter method
 
     public Book[] getAllTheBooksThatAreCurrentlyAvailable() {
-        return allTheBooksThatAreCurrentlyAvailable;
+        return allTheBooksThatAreCurrentlyAvailable.clone();
+    }
+    //setter method
+
+    public void setAllTheBooksThatAreCurrentlyAvailable(Book[] allTheBooksThatAreCurrentlyAvailable) {
+        this.allTheBooksThatAreCurrentlyAvailable = allTheBooksThatAreCurrentlyAvailable;
     }
 }
