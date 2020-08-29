@@ -17,8 +17,7 @@ public class FrontDesk {
         //book.setAuthorName("Jack Ketchum");
         //book.setBookISBNDigitNumber("99921-58-10-7");
 
-        System.out.println("Book Name is : " + book.getBookName() + "," + "Author Name is : " + book.getAuthorName()
-                + "," + "ISBN NO : " + book.getBookISBNDigitNumber());
+        System.out.println(book);
 
 
     }
