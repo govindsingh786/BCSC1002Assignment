@@ -10,4 +10,9 @@ package definitions;
 public class Library {
     //member variable
     private Book[] allTheBooksThatAreCurrentlyAvailable;
+    //getter method
+
+    public Book[] getAllTheBooksThatAreCurrentlyAvailable() {
+        return allTheBooksThatAreCurrentlyAvailable;
+    }
 }
