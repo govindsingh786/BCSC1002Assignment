@@ -7,8 +7,13 @@
 
 package execution;
 
+
+import definitions.Book;
+
 public class FrontDesk {
     public static void main(String[] args) {
+        Book book = new Book();
+
 
     }
 }
