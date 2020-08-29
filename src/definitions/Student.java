@@ -8,6 +8,7 @@
 package definitions;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Student {
     // member variable
@@ -90,5 +91,26 @@ public class Student {
                 ", numberOfBooksIssuedByTheStudent=" + numberOfBooksIssuedByTheStudent +
                 ", allTheNamesOfTheBooksIssuedByTheStudent=" + Arrays.toString(allTheNamesOfTheBooksIssuedByTheStudent) +
                 '}';
+    }
+    // equals() and the hashCode() method
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return studentUniversityRollNumber == student.studentUniversityRollNumber &&
+                numberOfBooksIssuedByTheStudent == student.numberOfBooksIssuedByTheStudent &&
+                Objects.equals(studentFirstName, student.studentFirstName) &&
+                Objects.equals(studentMiddleName, student.studentMiddleName) &&
+                Objects.equals(studentLastName, student.studentLastName) &&
+                Arrays.equals(allTheNamesOfTheBooksIssuedByTheStudent, student.allTheNamesOfTheBooksIssuedByTheStudent);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(studentFirstName, studentMiddleName, studentLastName, studentUniversityRollNumber, numberOfBooksIssuedByTheStudent);
+        result = 31 * result + Arrays.hashCode(allTheNamesOfTheBooksIssuedByTheStudent);
+        return result;
     }
 }
