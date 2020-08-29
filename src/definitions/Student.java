@@ -8,4 +8,11 @@
 package definitions;
 
 public class Student {
+    // member variable
+    private String studentFirstName;
+    private String studentMiddleName;
+    private String studentLastName;
+    private String studentUniversityRollNumber;
+    private String numberOfBooksIssuedByTheStudent;
+    private Book[] allTheNamesOfTheBooksIssuedByTheStudent;
 }
