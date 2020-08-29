@@ -7,6 +7,8 @@
 
 package definitions;
 
+import java.util.Arrays;
+
 public class Student {
     // member variable
     private String studentFirstName;
@@ -75,5 +77,18 @@ public class Student {
 
     public Book[] getAllTheNamesOfTheBooksIssuedByTheStudent() {
         return allTheNamesOfTheBooksIssuedByTheStudent.clone();
+    }
+    //to String method
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentFirstName='" + studentFirstName + '\'' +
+                ", studentMiddleName='" + studentMiddleName + '\'' +
+                ", studentLastName='" + studentLastName + '\'' +
+                ", studentUniversityRollNumber=" + studentUniversityRollNumber +
+                ", numberOfBooksIssuedByTheStudent=" + numberOfBooksIssuedByTheStudent +
+                ", allTheNamesOfTheBooksIssuedByTheStudent=" + Arrays.toString(allTheNamesOfTheBooksIssuedByTheStudent) +
+                '}';
     }
 }
