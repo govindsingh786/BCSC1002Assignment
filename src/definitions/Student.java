@@ -34,7 +34,7 @@ public class Student {
 
     //constructor method
     //1.non parameterized : It has no parameter
-    private Student() {
+    public Student() {
         this.studentFirstName = "Govind";
         this.studentMiddleName = "";
         this.studentLastName = "Singh";

@@ -9,6 +9,7 @@ package execution;
 
 
 import definitions.Book;
+import definitions.Student;
 
 public class FrontDesk {
     public static void main(String[] args) {
@@ -18,11 +19,12 @@ public class FrontDesk {
         //book.setAuthorName("Jack Ketchum");
         //book.setBookISBNDigitNumber("99921-58-10-7");
         //System.out.println(book);
-        if (book.equals(book1)) {
-            System.out.println("equal");
-        } else {
-            System.out.println("Not equal");
-        }
+        // if (book.equals(book1)) {
+        //    System.out.println("equal");
+        //} else {
+        //    System.out.println("Not equal");
+        // }
+        Student student = new Student();
 
 
     }
