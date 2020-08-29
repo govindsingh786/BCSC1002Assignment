@@ -8,4 +8,6 @@
 package definitions;
 
 public class Library {
+    //member variable
+    private Book[] allTheBooksThatAreCurrentlyAvailable;
 }
