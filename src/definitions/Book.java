@@ -54,4 +54,14 @@ public class Book {
         this.authorName = authorName;
         this.bookISBNDigitNumber = bookISBNDigitNumber;
     }
+    //to string method
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "bookName='" + bookName + '\'' +
+                ", authorName='" + authorName + '\'' +
+                ", bookISBNDigitNumber='" + bookISBNDigitNumber + '\'' +
+                '}';
+    }
 }
