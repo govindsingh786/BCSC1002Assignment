@@ -8,4 +8,8 @@
 package definitions;
 
 public class Book {
+    // member variable
+    private String bookName;
+    private String authorName;
+    private String bookISBNDigitNumber;
 }
