@@ -20,4 +20,9 @@ public class Library {
     public void setAllTheBooksThatAreCurrentlyAvailable(Book[] allTheBooksThatAreCurrentlyAvailable) {
         this.allTheBooksThatAreCurrentlyAvailable = allTheBooksThatAreCurrentlyAvailable;
     }
+
+    //constructor method
+    public Library() {
+        this.allTheBooksThatAreCurrentlyAvailable = new Book[100];
+    }
 }
