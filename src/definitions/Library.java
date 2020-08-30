@@ -25,7 +25,7 @@ public class Library {
 
     //constructor method
     public Library() {
-        this.allTheBooksThatAreCurrentlyAvailable = new Book[100];
+        this.allTheBooksThatAreCurrentlyAvailable = new Book[50];
     }
     //to string method
 

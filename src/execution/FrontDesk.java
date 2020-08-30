@@ -8,6 +8,7 @@
 package execution;
 
 
+import definitions.Library;
 import definitions.Student;
 
 public class FrontDesk {
@@ -23,8 +24,8 @@ public class FrontDesk {
         //} else {
         //    System.out.println("Not equal");
         // }
-        Student student = new Student();
-        System.out.println(student);
+        //Student student = new Student();
+        //System.out.println(student);
         //student.setStudentFirstName("Govind");
         //student.setStudentMiddleName("");
         //student.setStudentLastName("Singh");
@@ -39,6 +40,8 @@ public class FrontDesk {
         //System.out.println("2. Return a previously issues book for me.");
         //System.out.println("3. Show me all my issues books.");
         //System.out.println("4. Exit.");
+        Library library = new Library();
+        System.out.println(library);
 
 
     }
