@@ -11,6 +11,8 @@ package execution;
 import definitions.Library;
 import definitions.Student;
 
+import java.util.Scanner;
+
 public class FrontDesk {
     public static void main(String[] args) {
         //Book book = new Book("Blood Meridian", " Cormac McCarthy", "1 86197 271-7");
@@ -24,7 +26,7 @@ public class FrontDesk {
         //} else {
         //    System.out.println("Not equal");
         // }
-        //Student student = new Student();
+        Student student = new Student();
         //System.out.println(student);
         //student.setStudentFirstName("Govind");
         //student.setStudentMiddleName("");
@@ -34,14 +36,15 @@ public class FrontDesk {
         //student.setAllTheNamesOfTheBooksIssuedByTheStudent();
         //System.out.println(student.getAllTheNamesOfTheBooksIssuedByTheStudent());
         Student detailsOfTheStudentCurrentlyInteractingWithTheSystem;
-        //System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-");
-        //System.out.println("How may I help you today?");
-        //System.out.println("1. Issue a new book for me.");
-        //System.out.println("2. Return a previously issues book for me.");
-        //System.out.println("3. Show me all my issues books.");
-        //System.out.println("4. Exit.");
+        System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-");
+        System.out.println("How may I help you today?");
+        System.out.println("1. Issue a new book for me.");
+        System.out.println("2. Return a previously issues book for me.");
+        System.out.println("3. Show me all my issues books.");
+        System.out.println("4. Exit.");
         Library library = new Library();
-        System.out.println(library);
+        //System.out.println(library);
+        Scanner scanner = new Scanner(System.in);
 
 
     }
