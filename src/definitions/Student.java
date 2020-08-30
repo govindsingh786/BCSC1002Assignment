@@ -41,6 +41,9 @@ public class Student {
         this.studentUniversityRollNumber = 191500307;
         this.numberOfBooksIssuedByTheStudent = 2;
         this.allTheNamesOfTheBooksIssuedByTheStudent = new Book[2];
+        for (int i = 0; i < allTheNamesOfTheBooksIssuedByTheStudent.length; i++) {
+            allTheNamesOfTheBooksIssuedByTheStudent[i] = new Book();
+        }
     }
 
     public long getStudentUniversityRollNumber() {
