@@ -7,7 +7,7 @@
 
 package execution;
 
-
+import definitions.Book;
 import definitions.Library;
 import definitions.Student;
 
@@ -15,6 +15,7 @@ import java.util.Scanner;
 
 public class FrontDesk {
     public static void main(String[] args) {
+        Book book = new Book();
         //Book book = new Book("Blood Meridian", " Cormac McCarthy", "1 86197 271-7");
         //Book book1 = new Book("Exquisite Corpse", "Poppy Z. Brite", "2 46287 731-4");
         //book.setBookName("The Girl Next Door");
@@ -36,6 +37,8 @@ public class FrontDesk {
         //student.setAllTheNamesOfTheBooksIssuedByTheStudent();
         //System.out.println(student.getAllTheNamesOfTheBooksIssuedByTheStudent());
         Student detailsOfTheStudentCurrentlyInteractingWithTheSystem;
+        Scanner scanner = new Scanner(System.in);
+        int studentInput = scanner.nextInt();
         System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-");
         System.out.println("How may I help you today?");
         System.out.println("1. Issue a new book for me.");
@@ -44,7 +47,6 @@ public class FrontDesk {
         System.out.println("4. Exit.");
         Library library = new Library();
         //System.out.println(library);
-        Scanner scanner = new Scanner(System.in);
 
 
     }
